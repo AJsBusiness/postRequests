@@ -1,0 +1,22 @@
+{% extends "setup.html" %}
+
+{% block title %}quiz6{% endblock %}
+
+{% block content %}
+  <h1>Quetion 6: What number is Baby Tatonka?</h1>
+
+ <form action={{ url_for("render_finished") }} method="POST">
+  <input type="radio" id="Payton" name="answer5" value="52">
+  <label for="answer5">52</label><br>
+  <input type="radio" id="Payton" name="answer5" value="99">
+  <label for="answer5">99</label><br>
+  <input type="radio" id="Payton" name="answer5" value="71">
+  <label for="answer5">71</label><br>
+  <input type="radio" id="Payton" name="answer5" value="64">
+  <label for="answer5">64</label>
+  <br><br>
+  <input type="submit" value="submit">
+ </form> 
+
+
+{% endblock %}

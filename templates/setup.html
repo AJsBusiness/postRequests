@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='quizStyle.css') }}">
+  <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+
+
+
+<div id="content">{% block content %}{% endblock %}</div>
+<br><br><br>
+<p>There is no cheating allowed! If you try to go back and/or change your answer you will be forced to restart the test! Feel free to use the button below if you wish to try again when you are done!<p>
+
+<div id="footer">
+  
+  <br>
+ <a href="/startOver">Start Over</a>
+ 
+
+</div>
+
+</body>
+
+</html>

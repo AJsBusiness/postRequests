@@ -1,0 +1,22 @@
+{% extends "setup.html" %}
+
+{% block title %}quiz2{% endblock %}
+
+{% block content %}
+  <h1>Quetion 2: What number was Larry Allen?</h1>
+
+ <form action={{ url_for("render_quiz3") }} method="POST">
+  <input type="radio" id="larry" name="answer1" value="78">
+  <label for="answer1">78</label><br>
+  <input type="radio" id="larry" name="answer1" value="68">
+  <label for="answer1">68</label><br>
+  <input type="radio" id="larry" name="answer1" value="70">
+  <label for="answer1">70</label><br>
+  <input type="radio" id="larry" name="answer1" value="73">
+  <label for="answer1">73</label>
+  <br><br>
+  <input type="submit" value="submit">
+ </form> 
+
+
+{% endblock %}

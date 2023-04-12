@@ -1,0 +1,22 @@
+{% extends "setup.html" %}
+
+{% block title %}quiz4{% endblock %}
+
+{% block content %}
+  <h1>Quetion 4: What number was Jerry Rice?</h1>
+
+ <form action={{ url_for("render_quiz5") }} method="POST">
+  <input type="radio" id="Rice" name="answer3" value="80">
+  <label for="answer3">80</label><br>
+  <input type="radio" id="Rice" name="answer3" value="89">
+  <label for="answer3">89</label><br>
+  <input type="radio" id="Rice" name="answer3" value="99">
+  <label for="answer3">99</label><br>
+  <input type="radio" id="Rice" name="answer3" value="85">
+  <label for="answer3">85</label>
+  <br><br>
+  <input type="submit" value="submit">
+ </form> 
+
+
+{% endblock %}
